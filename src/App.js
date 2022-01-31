@@ -35,9 +35,9 @@ function App() {
         <section className='dropdowns'>
           
           {/*  render all three Dropdown components (WaterfrontDropdown, SkylineDropdown, CastleDropdown) here. */}
+          <CastleDropdown setCastleId={setCastleId} />
           <SkylineDropdown setSkylineId={setSkylineId} />
           <WaterfrontDropdown setWaterfrontId={setWaterfrontId} />
-          <CastleDropdown setCastleId={setCastleId} />
 
           {/* In each Dropdown, pass as props the state handler functions defined above, so that these child components can manipulate parent state */}
           
