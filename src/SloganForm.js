@@ -18,7 +18,7 @@ export default function SloganForm({ slogans, setSlogans }) {
   }
 
   function handleSloganChange(e) {
-    sloganInput(e.target.value);
+    setSloganInput(e.target.value);
   }
 
   return (
