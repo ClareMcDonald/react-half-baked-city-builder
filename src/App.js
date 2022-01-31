@@ -33,11 +33,12 @@ function App() {
       <div className='bottom'>
         {/* here, the CityNameInput component takes in the setCityName state handler function */}
         <section className='dropdowns'>
-          {
-          // render all three Dropdown components (WaterfrontDropdown, SkylineDropdown, CastleDropdown) here. 
-            <SkylineDropdown setSkylineId={setSkylineId} />
-          // In each Dropdown, pass as props the state handler functions defined above, so that these child components can manipulate parent state 
-          }
+          
+          {/*  // render all three Dropdown components (WaterfrontDropdown, SkylineDropdown, CastleDropdown) here. */}
+          <SkylineDropdown setSkylineId={setSkylineId} />
+          <WaterfrontDropdown setWaterfrontId={setWaterfrontId} />
+          {/* // In each Dropdown, pass as props the state handler functions defined above, so that these child components can manipulate parent state */}
+          
         </section>
         {/* here, the SloganForm component takes in the setSlogans state handler function and the slogans array that live in state */}
         {/* here, the SloganList component takes the array of slogans that lives in state */}
