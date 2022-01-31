@@ -28,7 +28,7 @@ function App() {
 
       <h1>
         {/* dynamically update the city name here using state */}
-        Welcome to beautiful Portland!
+        Welcome to beautiful {cityName}!
       </h1>
       <div className='bottom'>
         {/* here, the CityNameInput component takes in the setCityName state handler function */}
@@ -38,6 +38,7 @@ function App() {
           <CastleDropdown setCastleId={setCastleId} />
           <SkylineDropdown setSkylineId={setSkylineId} />
           <WaterfrontDropdown setWaterfrontId={setWaterfrontId} />
+          <CityNameInput setCityName={setCityName}/>
 
           {/* In each Dropdown, pass as props the state handler functions defined above, so that these child components can manipulate parent state */}
           
